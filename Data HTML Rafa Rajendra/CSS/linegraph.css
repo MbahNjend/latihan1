@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #111;
+    font-family: 'Montserrat' , sans-serif;
+}
+
+.wrapper h1{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 70px 0 0;
+    color: #fff;
+    font-size: 80px;
+    font-family: 'Bebas Neue ' , sans-serif;
+
+}
+
+.wrapper h2{
+    text-align: left;
+    color: #fff;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.wrapper{
+    width: 800px;
+    margin: 0 auto;
+}
+
+.line{
+    height: 35px;
+    max-width: 800px;
+    margin: 0 auto 10px auto;
+    line-height: 35px;
+    font-size: 15px;
+    color: white;
+    padding: 0 0 0 10px;
+    position: relative;
+    background: #262626;
+    border-radius: 50px;
+    z-index: -2;
+    font-weight: 900;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.5);
+
+}
+
+.line::before{
+    content: '';
+    background: linear-gradient(45deg, #ee0979, #ff6a00);
+    width: 100%;
+    position: absolute;
+    left: 0;
+    height: 25px;
+    top: 0;
+    z-index: -2;
+
+}
+
+.line::after{
+    content: '';
+    background: linear-gradient(45deg, #ee0979, #ff6a00);
+    height: 35px;
+    transition: 0.8s;
+    display: block;
+    width: 100%;
+    animation: animate 1 4s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 50px;
+}
+
+.line1::after{
+    max-width: 70%;
+}
+
+.line2::after{
+    max-width: 100%;
+}
+.line3::after{
+    max-width: 65%;
+}
+.line4::after{
+    max-width: 70%;
+}
